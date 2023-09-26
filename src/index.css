@@ -2082,7 +2082,8 @@ body.slide .oliven-nav-toggle {
     margin: 0 auto;
   }
   .modal-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 20px;
   }
   .qrCode {
     width: 100% !important;

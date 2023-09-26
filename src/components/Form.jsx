@@ -103,6 +103,7 @@ const Form = () => {
               placeholder="Lời chúc của bạn"
               value={user.Message}
               required
+              rows="6"
               className="input-form"
               onChange={handleInputChange}
             ></textarea>
