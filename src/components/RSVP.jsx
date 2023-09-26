@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Form from "./Form";
-
+import Qr from "../../public/QR.jpg";
 function RSVP() {
   const [modal, showModal] = useState(false);
 
@@ -12,7 +12,6 @@ function RSVP() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-6 bg-white p-40">
-            {" "}
             <span className="oliven-title-meta text-center">
               Sự hiện diện của quý vị
             </span>
@@ -35,11 +34,7 @@ function RSVP() {
                       &times;
                     </span>
                     <Form />
-                    <img
-                      src="../../public/QR.jpg"
-                      alt="QR"
-                      className="qrCode"
-                    />
+                    <img src={Qr} alt="QR" className="qrCode" />
                   </div>
                 </div>
               )}
