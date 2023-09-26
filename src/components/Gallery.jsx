@@ -13,7 +13,7 @@ import gallery12 from "../../public/TL_03970.jpg";
 
 function Gallery() {
   return (
-    <div id="gallery" className="section-padding p-[60px]">
+    <div id="gallery" className="section-padding p-[30px]">
       <div className="container">
         <div className="row">
           <div className="col-md-12 mb-30">

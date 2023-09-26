@@ -5,8 +5,8 @@ function Story() {
       id="story"
       className="  p-[60px] story section-padding overflow-hidden"
     >
-      <div className="">
-        <div className="row flex justify-between">
+      <div className="story-flex">
+        <div className="row flex justify-between story-flex">
           <div data-aos="fade-right" className="col-md-5 mb-30 mr-[20px]">
             <div className="story-img animate-box">
               <div className="img w-50%">
@@ -14,7 +14,7 @@ function Story() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-left" className="col-md-7 animate-box aloalo">
+          <div data-aos="fade-left" className="col-md-7 animate-box alo-alo">
             <h4 className="oliven-story-subtitle">Our love.</h4>
             <h3 className="oliven-story-title">Our Story</h3>
             <p>
