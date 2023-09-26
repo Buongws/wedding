@@ -1,12 +1,6 @@
-import { useState } from "react";
 import Form from "./Form";
 import Qr from "../../public/QR.jpg";
 function RSVP() {
-  const [modal, showModal] = useState(false);
-
-  const toggleModal = () => {
-    showModal(!modal);
-  };
   return (
     <div id="rsvp" className="section-padding bg-img bg-fixed">
       <div className="container">
@@ -24,20 +18,12 @@ function RSVP() {
               chúc phúc
             </span>
             <div className="oliven-title-meta text-center modal-center">
-              <div className="modal-text" onClick={toggleModal}>
-                TẠI ĐÂY
-              </div>
-              {modal && (
-                <div className="modal">
-                  <div className="modal-content">
-                    <span className="close" onClick={toggleModal}>
-                      &times;
-                    </span>
-                    <Form />
-                    <img src={Qr} alt="QR" className="qrCode" />
-                  </div>
+              <div className="modal">
+                <div className="modal-content">
+                  <Form />
+                  <img src={Qr} alt="QR" className="qrCode" />
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </div>
