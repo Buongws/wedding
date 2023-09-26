@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Form from "./form";
+import Form from "./Form";
 
 function RSVP() {
   const [modal, showModal] = useState(false);
