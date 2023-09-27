@@ -8,8 +8,9 @@ function Footer() {
             <h2>
               <a href="/">
                 <img src={Logo} alt="" />
-                <span>
-                  Trọng Khang <small>&</small> Thùy Linh
+                <span className=" ">
+                  Trọng Khang <small></small> <br />
+                  Thùy Linh
                 </span>
               </a>
             </h2>
