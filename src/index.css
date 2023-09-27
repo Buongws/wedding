@@ -33,19 +33,17 @@
 #couple {
   overflow: hidden;
 }
-/* ===== Google Fonts ===== */
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 
-/* ===== Default style ===== */
 html,
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.75em;
@@ -532,7 +530,7 @@ input[type="radio"]:checked:before {
   letter-spacing: 0px;
 }
 #oliven-aside .oliven-logo span {
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   text-transform: none;
   text-align: center;
@@ -565,7 +563,7 @@ input[type="radio"]:checked:before {
   display: block;
   font-size: 36px;
   color: #bd945a;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   display: block;
   margin-top: 0px;
@@ -804,7 +802,7 @@ body.slide .oliven-nav-toggle {
   padding-top: 10px;
 }
 .header .caption h1 {
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   margin: 0 0 15px 0;
   font-size: 120px;
@@ -886,7 +884,7 @@ body.slide .oliven-nav-toggle {
   display: block;
   position: relative;
   top: 12px;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 30px;
   color: #bd945a;
@@ -897,7 +895,7 @@ body.slide .oliven-nav-toggle {
   display: block;
   position: relative;
   top: 12px;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 60px;
   color: #bd945a;
@@ -915,7 +913,7 @@ body.slide .oliven-nav-toggle {
   display: block;
   position: relative;
   top: 12px;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 30px;
   color: #bd945a;
@@ -953,7 +951,7 @@ body.slide .oliven-nav-toggle {
   color: #bd945a;
   font-size: 24px;
   font-weight: 400;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
 }
 .bridegroom .info p {
   margin-top: 10px;
@@ -1026,7 +1024,7 @@ body.slide .oliven-nav-toggle {
 #countdown .section-head h4 {
   position: relative;
   color: #fff;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 60px;
   margin-bottom: 0;
@@ -1077,7 +1075,7 @@ body.slide .oliven-nav-toggle {
 }
 .story .story-img .img {
   padding: 0 30px 30px 15px;
-  width: 50%;
+  width: 80%;
   position: relative;
 }
 .story .story-img .img:before {
@@ -1092,17 +1090,6 @@ body.slide .oliven-nav-toggle {
 .story .story-img .img img {
   position: relative;
   z-index: 2;
-}
-.story .story-img:after {
-  content: "";
-  width: 90%;
-  position: absolute;
-  top: -18%;
-  bottom: -25%;
-  left: 0;
-  /* background-image: url(../images/dots.png); */
-  background-repeat: repeat;
-  z-index: -1;
 }
 
 .story-img-2 {
@@ -1243,7 +1230,7 @@ body.slide .oliven-nav-toggle {
 .seeyou .section-head h4 {
   position: relative;
   color: #fff;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 60px;
   margin-bottom: 0;
@@ -1305,7 +1292,7 @@ body.slide .oliven-nav-toggle {
   text-align: center;
 }
 .gallery-box .gallery-detail h4 {
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 24px;
   color: #fff;
@@ -1401,7 +1388,7 @@ body.slide .oliven-nav-toggle {
 .footer2 h2 a span,
 .footer2 h2 span {
   display: block;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   color: #000;
 }
@@ -2063,16 +2050,69 @@ body.slide .oliven-nav-toggle {
 .countdown-item {
   position: relative;
   top: 12px;
-  font-family: "Alex Brush", cursive;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 60px;
   color: #bd945a;
   line-height: 1.5em;
   margin-bottom: 5px;
 }
-.aloalo {
-  margin-left: -35%;
+@media screen and (max-width: 768px) {
+  .countdown {
+    display: flex;
+    flex-direction: column;
+  }
+  .story {
+    padding: 20px;
+  }
+  .story-flex {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .story-img {
+    display: flex;
+    justify-content: center;
+  }
+  .story .img {
+    width: 100% !important;
+  }
+
+  .alo-alo {
+    padding: 50px;
+    margin: 0 auto;
+  }
+  .modal-content {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .qrCode {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 20px;
+  }
+  .padding-rsvp {
+    padding: 16px !important;
+    margin: 0 5px;
+  }
+  .noti {
+    position: absolute;
+    bottom: 4% !important;
+    left: 80% !important;
+    color: white;
+    cursor: pointer;
+  }
+  .text-rsvp {
+    font-size: 20px !important;
+  }
 }
+@media screen and (max-width: 1024px) {
+  .story .img {
+    width: 96% !important;
+  }
+}
+.alo-alo {
+}
+
 .modal-center:hover {
 }
 .modal-text {
@@ -2093,7 +2133,257 @@ body.slide .oliven-nav-toggle {
   cursor: pointer;
 }
 .qrCode {
-  height: 50%;
-  width: 50%;
-  margin: 0 auto;
+  height: 60vh;
+  width: 30vw;
+}
+.modal-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button-submit-form {
+  padding: 10px 20px !important;
+}
+.container-form {
+  padding: 0px 20px;
+}
+.input-form {
+  padding: 15px 30px !important;
+}
+.vinh-hanh {
+  font-weight: 800 !important;
+}
+
+/* CSS */
+.button-87 {
+  margin: 10px !important;
+  padding: 10px 20px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  transition: 0.5s !important;
+  background-size: 200% auto !important;
+  color: white !important;
+  border-radius: 10px !important;
+  display: block !important;
+  border: 0px !important;
+  font-weight: 700 !important;
+  box-shadow: 0px 0px 14px -7px #f09819 !important;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  ) !important ;
+  cursor: pointer !important;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none !important;
+  -webkit-user-select: none;
+  touch-action: manipulation !important;
+  margin: 0 auto !important;
+}
+
+.button-87:hover {
+  background-position: right center !important;
+  /* change the direction of the change here */
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.button-87:active {
+  transform: scale(0.95) !important;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.noti {
+  position: absolute;
+  bottom: 5%;
+  left: 94%;
+  color: white;
+  cursor: pointer;
+}
+.tooltip {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: -18%;
+  left: -174%;
+  background-color: #333; /* Dark background for the tooltip */
+  color: #fff; /* White text color */
+  padding: 5px 10px; /* Some padding for spacing */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 0.8rem; /* Slightly smaller font */
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.noti:hover .tooltip {
+  display: block; /* Show the tooltip when the noti element is hovered */
+}
+.bell {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  margin: 50px auto 0;
+  color: white;
+  -webkit-animation: ring 4s 0.7s ease-in-out infinite;
+  -webkit-transform-origin: 50% 4px;
+  -moz-animation: ring 4s 0.7s ease-in-out infinite;
+  -moz-transform-origin: 50% 4px;
+  animation: ring 4s 0.7s ease-in-out infinite;
+  transform-origin: 50% 4px;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    -webkit-transform: rotateZ(0);
+  }
+  1% {
+    -webkit-transform: rotateZ(30deg);
+  }
+  3% {
+    -webkit-transform: rotateZ(-28deg);
+  }
+  5% {
+    -webkit-transform: rotateZ(34deg);
+  }
+  7% {
+    -webkit-transform: rotateZ(-32deg);
+  }
+  9% {
+    -webkit-transform: rotateZ(30deg);
+  }
+  11% {
+    -webkit-transform: rotateZ(-28deg);
+  }
+  13% {
+    -webkit-transform: rotateZ(26deg);
+  }
+  15% {
+    -webkit-transform: rotateZ(-24deg);
+  }
+  17% {
+    -webkit-transform: rotateZ(22deg);
+  }
+  19% {
+    -webkit-transform: rotateZ(-20deg);
+  }
+  21% {
+    -webkit-transform: rotateZ(18deg);
+  }
+  23% {
+    -webkit-transform: rotateZ(-16deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(14deg);
+  }
+  27% {
+    -webkit-transform: rotateZ(-12deg);
+  }
+  29% {
+    -webkit-transform: rotateZ(10deg);
+  }
+  31% {
+    -webkit-transform: rotateZ(-8deg);
+  }
+  33% {
+    -webkit-transform: rotateZ(6deg);
+  }
+  35% {
+    -webkit-transform: rotateZ(-4deg);
+  }
+  37% {
+    -webkit-transform: rotateZ(2deg);
+  }
+  39% {
+    -webkit-transform: rotateZ(-1deg);
+  }
+  41% {
+    -webkit-transform: rotateZ(1deg);
+  }
+
+  43% {
+    -webkit-transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+  }
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0);
+  }
+  1% {
+    transform: rotate(30deg);
+  }
+  3% {
+    transform: rotate(-28deg);
+  }
+  5% {
+    transform: rotate(34deg);
+  }
+  7% {
+    transform: rotate(-32deg);
+  }
+  9% {
+    transform: rotate(30deg);
+  }
+  11% {
+    transform: rotate(-28deg);
+  }
+  13% {
+    transform: rotate(26deg);
+  }
+  15% {
+    transform: rotate(-24deg);
+  }
+  17% {
+    transform: rotate(22deg);
+  }
+  19% {
+    transform: rotate(-20deg);
+  }
+  21% {
+    transform: rotate(18deg);
+  }
+  23% {
+    transform: rotate(-16deg);
+  }
+  25% {
+    transform: rotate(14deg);
+  }
+  27% {
+    transform: rotate(-12deg);
+  }
+  29% {
+    transform: rotate(10deg);
+  }
+  31% {
+    transform: rotate(-8deg);
+  }
+  33% {
+    transform: rotate(6deg);
+  }
+  35% {
+    transform: rotate(-4deg);
+  }
+  37% {
+    transform: rotate(2deg);
+  }
+  39% {
+    transform: rotate(-1deg);
+  }
+  41% {
+    transform: rotate(1deg);
+  }
+
+  43% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
